@@ -18,7 +18,7 @@ configure_wifi() {
 set wireless.radio${radio}.channel="${channel}"
 set wireless.radio${radio}.htmode="${htmode}"
 set wireless.radio${radio}.mu_beamformer='1'
-set wireless.radio${radio}.country='US'
+set wireless.radio${radio}.country='CN'
 set wireless.radio${radio}.txpower="${txpower}"
 set wireless.radio${radio}.cell_density='0'
 set wireless.radio${radio}.disabled='0'
@@ -66,8 +66,8 @@ redmi_ax6_wifi_cfg() {
 }
 
 qihoo_360v6_wifi_cfg() {
-	configure_wifi 0 9 HE40 20 'V6RT' 'qwerjklh'
-	configure_wifi 1 149 HE80 20 'V6RT2' 'qwerjklh'
+	configure_wifi 0 149 HE80 20 'V6RT2' 'qwerjklh'
+	configure_wifi 1 9 HE40 20 'V6RT' 'qwerjklh'
 }
 
 linksys_mx4x00_wifi_cfg() {
